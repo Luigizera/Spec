@@ -14,14 +14,30 @@
         td{
             text-align: center;
         }
-        
+        #programacao{
+            border-collapse: collapse;
+            width: 100%;
+        }
+        #programacao td, #programacao th{
+            border: 1px solid white;
+            padding: 20px;
+        }
+        #programacao th{
+            background-color: red;
+        }
+        #programacao tr:nth-child(even){
+            background-color: #111111;
+        }
+        #programacao tr:hover{
+            background-color: #780000;
+        }
     </style>
 </head>
 <body>
     <p><a href="index.html">Voltar</a></p>
     <h1>Confira nossa programação abaixo:</h1>
-    <hr>
-    <table border="1" id="programacao">
+    
+    <table id="programacao">
         <tr>
             <th colspan="2">Filme</th>
             <th>Classificação Indicativa</th>
@@ -62,7 +78,7 @@
             <td>99/99/9999</td>
         </tr>
     </table>
-    <hr>
+    
     <h4>Veja os filmes assistidos <a href=filmes.html>aqui</a>!</h4>
     <h4>Veja as séries / sequências assistidas <a href=series.html>aqui</a>!</h4>
 </body>
