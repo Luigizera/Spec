@@ -14,56 +14,44 @@
         td{
             text-align: center;
         }
-        #programacao{
-            border-collapse: collapse;
-            width: 100%;
-        }
-        #programacao td, #programacao th{
-            border: 1px solid white;
-            padding: 20px;
-        }
-        #programacao th{
-            background-color: red;
-        }
-        #programacao tr:nth-child(even){
-            background-color: #111111;
-        }
-        #programacao tr:hover{
-            background-color: #780000;
-        }
     </style>
 </head>
 <body>
     <p><a href="index.html">Voltar</a></p>
-    <h1>Confira nossa programação abaixo:</h1>
+    <main id="programacao">
+        <h1>Confira nossa programação abaixo:</h1>
+
+        <table>
+            <tr>
+                <th colspan="2">Filme</th>
+                <th>Classificação Indicativa</th>
+                <th>Sobre</th>
+                <th>Diretor</th>
+                <th>Dia</th>
+            </tr>
+            <tr>
+                <td><img src="filmes/filme_38.jpg" length="117" width="180"></td>
+                <td>O Esquadrão Suicida (2021)</td>
+                <td>Não recomendado para menores de 14 anos</td>
+                <td>O governo envia os supervilões mais perigosos do mundo para a remota ilha de Corto Maltese, repleta de inimigos. Armados com armas de alta tecnologia, eles viajam pela selva perigosa em uma missão de busca e destruição com o Coronel Rick Flag.</td>
+                <td>James Gunn</td>
+                <td>05/11/2021</td>
+            </tr>
+            <tr>
+                <td><img src="filmes/filme_39.jpg" length="117" width="180"></td>
+                <td>O Fantástico Sr. Raposo (2009)</td>
+                <td>Livre para todos os públicos</td>
+                <td>Após 12 anos de felicidade bucólica, o Sr. Raposo descumpre a promessa que fez à esposa e invade as fazendas dos vizinhos Boggis, Bunce e Bean. Ceder aos seus instintos animais coloca em perigo não somente o seu casamento, mas também a vida de sua família e seus amigos. Quando os fazendeiros montam uma armadilha para o Sr. Raposo, ele tem que confiar na sua astúcia natural para vencer o oponente.</td>
+                <td>Wes Anderson</td>
+                <td>06/11/2021</td>
+            </tr>
+        </table>
+    </main>
     
-    <table id="programacao">
-        <tr>
-            <th colspan="2">Filme</th>
-            <th>Classificação Indicativa</th>
-            <th>Sobre</th>
-            <th>Diretor</th>
-            <th>Dia</th>
-        </tr>
-        <tr>
-            <td><img src="filmes/filme_38.jpg" length="117" width="180"></td>
-            <td>O Esquadrão Suicida (2021)</td>
-            <td>Não recomendado para menores de 14 anos</td>
-            <td>O governo envia os supervilões mais perigosos do mundo para a remota ilha de Corto Maltese, repleta de inimigos. Armados com armas de alta tecnologia, eles viajam pela selva perigosa em uma missão de busca e destruição com o Coronel Rick Flag.</td>
-            <td>James Gunn</td>
-            <td>05/11/2021</td>
-        </tr>
-        <tr>
-            <td><img src="filmes/filme_39.jpg" length="117" width="180"></td>
-            <td>O Fantástico Sr. Raposo (2009)</td>
-            <td>Livre para todos os públicos</td>
-            <td>Após 12 anos de felicidade bucólica, o Sr. Raposo descumpre a promessa que fez à esposa e invade as fazendas dos vizinhos Boggis, Bunce e Bean. Ceder aos seus instintos animais coloca em perigo não somente o seu casamento, mas também a vida de sua família e seus amigos. Quando os fazendeiros montam uma armadilha para o Sr. Raposo, ele tem que confiar na sua astúcia natural para vencer o oponente.</td>
-            <td>Wes Anderson</td>
-            <td>06/11/2021</td>
-        </tr>
-    </table>
-    
-    <h4>Veja os filmes assistidos <a href=filmes.html>aqui</a>!</h4>
-    <h4>Veja as séries / sequências assistidas <a href=series.html>aqui</a>!</h4>
+    <footer>
+        <hr>
+        <p>Veja os filmes assistidos <a href=filmes.html>aqui</a>!</p>
+        <p>Veja as séries / sequências assistidas <a href=series.html>aqui</a>!</p>
+    </footer>
 </body>
 </html>

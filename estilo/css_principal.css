@@ -11,3 +11,52 @@ a{
 a:hover{
     color: darkred;
 }
+
+/* Programação */
+
+#programacao table{
+    border-collapse: collapse;
+    width: 100%;
+}
+#programacao td, #programacao th{
+    border: 1px solid white;
+    padding: 20px;
+}
+#programacao th{
+    background-color: red;
+}
+#programacao tr:nth-child(even){
+    background-color: #111111;
+}
+#programacao tr:hover{
+    background-color: #780000;
+}
+
+/* Filmes */
+
+#filmes figure{
+    text-align: center;
+}
+#filmes h1{
+    text-align: center;
+}
+#filmes dt{
+    background-color: red;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+#filmes dd{
+    border: thin red solid;
+    border-radius: 0px;
+    margin-top: -2px;
+    margin-bottom: 30px;
+    padding: 30px;
+    text-align: center;
+}
+#filmes hr{
+    border-bottom-width: medium;
+}
+#filmes figure figcaption{
+    font-size: 12px;
+}
