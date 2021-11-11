@@ -5,10 +5,81 @@ body{
 }
 a{
     text-decoration: none;
-    color: red;
 }
-a:hover{
-    color: darkred;
+
+/* Index*/
+
+#index main{
+    text-align: center;
+}
+
+#index main p a{
+    color: white;
+    padding: 10px;
+    border: red solid thin;
+    border-radius: 20px;
+}
+
+#index main p a:hover{
+    background-color: red;
+}
+
+#index main #layout{
+    padding: 200px;
+    width: auto;
+    height: auto;
+    background-image: url(../midia/layout.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    text-indent: -100000px;
+}
+
+/* Footer */
+
+
+
+/* Navegação */
+
+nav{
+    background-color: #111111;
+    overflow: auto;
+    clear: both;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+nav ul{
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 1px;
+}
+
+nav ul li{
+    float: left;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 8px 50px;
+    line-height: 2em;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+#index ul li a[href="index.html"],
+#sobre ul li a[href="sobre.html"],
+#filmes ul li a[href="filmes.html"],
+#series ul li a[href="series.html"],
+#programacao ul li a[href="programacao.html"]{
+    background-color: red;
+    border-radius: 50px;
 }
 
 /* Programação */
@@ -32,6 +103,17 @@ a:hover{
 }
 
 /* Filmes */
+
+#filmes dd a{
+    border: red solid thin;
+    padding: 10px;
+    color: white;
+}
+
+#filmes dd a:hover{
+    background-color: red;
+}
+
 
 #filmes figure{
     text-align: center;
@@ -58,4 +140,68 @@ a:hover{
 }
 #filmes figure figcaption{
     font-size: 12px;
+}
+
+/* Series / Sequencias */
+
+#series dd a{
+    border: red solid thin;
+    padding: 10px;
+    color: white;
+}
+
+#series dd a:hover{
+    background-color: red;
+}
+
+#series figure{
+    text-align: center;
+}
+#series h1{
+    text-align: center;
+}
+#series dt{
+    background-color: red;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+#series dd{
+    border: thin red solid;
+    border-radius: 0px;
+    margin-top: -2px;
+    margin-bottom: 30px;
+    padding: 30px;
+    text-align: center;
+}
+#series hr{
+    border-bottom-width: medium;
+}
+
+/* Sobre */
+
+#sobre h2{
+    background: red;
+    text-align: center;
+}
+#sobre dt{
+    background-color: red;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+#sobre dd{
+    border: thin red solid;
+    border-radius: 0px;
+    margin-top: -2px;
+    margin-bottom: 30px;
+    padding: 30px;
+}
+#sobre dd a{
+    font-weight: bold;
+    color: red;
+}
+
+#sobre dd a:hover{
+    color: darkred;
 }
