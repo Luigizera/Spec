@@ -84,6 +84,14 @@ nav ul li a:hover{
 
 /* Programação */
 
+#programacao h1{
+    text-align: center;
+}
+
+#programacao td{
+    text-align: center;
+}
+
 #programacao table{
     border-collapse: collapse;
     width: 100%;
