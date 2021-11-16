@@ -62,7 +62,6 @@ nav ul li{
 nav ul a{
     text-decoration: none;
     color: white;
-    text-decoration: none;
     font-size: 1.2em;
     padding: 8px 50px;
     line-height: 2em;
@@ -84,6 +83,13 @@ nav ul li a:hover{
 
 /* Programação */
 
+/* ASSINADO JINX*/
+#programacao{
+    background-image: url(../midia/jinx.png);
+    background-repeat: center center;
+    background-size: cover;
+}
+
 #programacao h1{
     text-align: center;
 }
@@ -102,9 +108,6 @@ nav ul li a:hover{
 }
 #programacao th{
     background-color: red;
-}
-#programacao tr:nth-child(even){
-    background-color: #111111;
 }
 #programacao tr:hover{
     background-color: #780000;
