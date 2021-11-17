@@ -46,7 +46,6 @@ nav{
     overflow: auto;
     clear: both;
     margin-bottom: 30px;
-    margin-top: 30px;
 }
 
 nav ul{
@@ -81,6 +80,8 @@ nav ul li a:hover{
     border-radius: 50px;
 }
 
+/* Header */
+
 /* Programação */
 
 /* ASSINADO JINX*/
@@ -89,6 +90,7 @@ nav ul li a:hover{
     background-repeat: center center;
     background-size: cover;
 }
+/* ASSINADO JINX*/
 
 #programacao h1{
     text-align: center;
@@ -191,8 +193,7 @@ nav ul li a:hover{
 
 /* Sobre */
 
-#sobre h2{
-    background: red;
+#sobre h1{
     text-align: center;
 }
 #sobre dt{
