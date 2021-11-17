@@ -217,3 +217,7 @@ nav ul li a:hover{
 #sobre dd a:hover{
     color: darkred;
 }
+
+#sobre dd{
+    text-align: center;
+}
