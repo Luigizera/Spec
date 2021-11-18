@@ -7,8 +7,29 @@ a{
     text-decoration: none;
 }
 
-/* Index*/
+/* Scrollbar */
 
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: gray; 
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: red;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: darkred; 
+}
+
+/* Index*/
+#index{
+    background-color: black;
+    color: white;
+}
 #index main{
     text-align: center;
 }
@@ -41,11 +62,12 @@ a{
 
 /* Navegação */
 
+
 nav{
     background-color: #111111;
     overflow: auto;
     clear: both;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 nav ul{
@@ -58,7 +80,7 @@ nav ul li{
     float: left;
 }
 
-nav ul a{
+nav ul li a{
     text-decoration: none;
     color: white;
     font-size: 1.2em;
@@ -71,14 +93,18 @@ nav ul li a:hover{
     color: white;
 }
 
-#index ul li a[href="index.html"],
-#sobre ul li a[href="sobre.html"],
-#filmes ul li a[href="filmes.html"],
-#series ul li a[href="series.html"],
-#programacao ul li a[href="programacao.html"]{
-    background-color: red;
-    border-radius: 50px;
+.navbar-light .navbar-nav .nav-link{
+    color: white;
 }
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.navbar-light .navbar-nav .active>.nav-link,.navbar-light .navbar-nav .nav-link.active,.navbar-light .navbar-nav .nav-link.show,.navbar-light .navbar-nav .show>.nav-link{
+    color: red;
+}
+
 
 /* Header */
 
@@ -92,15 +118,22 @@ nav ul li a:hover{
 }
 /* ASSINADO JINX*/
 
-#programacao h1{
+#programacao caption{
+    caption-side: top;
     text-align: center;
+    font-size: 2em;
+    border: white solid 2px;
+    border-radius: 400px 400px 0 0;
+    color: white;
+    background-color: rgba(150, 0, 0, 0.9);
 }
 
-#programacao td{
+#programacao td, #programacao th{
     text-align: center;
 }
 
 #programacao table{
+    background-color: rgba(0,0,0,0.7);
     border-collapse: collapse;
     width: 100%;
 }
@@ -109,10 +142,10 @@ nav ul li a:hover{
     padding: 20px;
 }
 #programacao th{
-    background-color: red;
+    background-color: rgba(150, 0, 0, 0.9);
 }
 #programacao tr:hover{
-    background-color: #780000;
+    background-color: rgba(100, 0, 0, 0.6);
 }
 
 /* Filmes */
@@ -125,8 +158,8 @@ nav ul li a:hover{
 
 #filmes dd a:hover{
     background-color: red;
+    text-decoration: none;
 }
-
 
 #filmes figure{
     text-align: center;
@@ -135,16 +168,17 @@ nav ul li a:hover{
     text-align: center;
 }
 #filmes dt{
-    background-color: red;
+    background-color: rgba(150, 0, 0, 0.9);
+    margin-left: 40px;
+    margin-right: 40px;
     text-align: center;
     font-weight: bold;
     font-size: 25px;
 }
 #filmes dd{
-    border: thin red solid;
+    border: thin rgba(150, 0, 0, 0.9) solid;
     border-radius: 0px;
-    margin-top: -2px;
-    margin-bottom: 30px;
+    margin: -2px 40px 30px 40px;
     padding: 30px;
     text-align: center;
 }
@@ -165,6 +199,7 @@ nav ul li a:hover{
 
 #series dd a:hover{
     background-color: red;
+    text-decoration: none;
 }
 
 #series figure{
@@ -174,16 +209,17 @@ nav ul li a:hover{
     text-align: center;
 }
 #series dt{
-    background-color: red;
+    background-color: rgba(150, 0, 0, 0.9);
+    margin-left: 40px;
+    margin-right: 40px;
     text-align: center;
     font-weight: bold;
     font-size: 25px;
 }
 #series dd{
-    border: thin red solid;
+    border: thin rgba(150, 0, 0, 0.9) solid;
     border-radius: 0px;
-    margin-top: -2px;
-    margin-bottom: 30px;
+    margin: -2px 40px 30px 40px;
     padding: 30px;
     text-align: center;
 }
@@ -197,13 +233,13 @@ nav ul li a:hover{
     text-align: center;
 }
 #sobre dt{
-    background-color: red;
+    background-color: rgba(150, 0, 0, 0.9);
     text-align: center;
     font-weight: bold;
     font-size: 25px;
 }
 #sobre dd{
-    border: thin red solid;
+    border: thin rgba(150, 0, 0, 0.9) solid;
     border-radius: 0px;
     margin-top: -2px;
     margin-bottom: 30px;
