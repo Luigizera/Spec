@@ -9,19 +9,23 @@ a{
 
 /* Scrollbar */
 
-::-webkit-scrollbar {
+::-webkit-scrollbar,
+::-moz-scrollbar{
     width: 15px;
 }
 
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-track,
+::-moz-scrollbar-track{
     background: gray; 
 }
  
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb,
+::-moz-scrollbar-thumb{
     background: red;
 }
 
-::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover, 
+::-moz-scrollbar-thumb:hover{
     background: darkred; 
 }
 
@@ -105,6 +109,9 @@ nav ul li a:hover{
     color: red;
 }
 
+.navbar-light .navbar-toggler-icon{
+    background-image: url(../midia/navToggler.png)
+}
 
 /* Header */
 
