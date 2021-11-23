@@ -117,20 +117,18 @@ nav ul li a:hover{
 
 /* Programação */
 
-/* ASSINADO JINX*/
-#programacao{
-    background-image: url(../midia/jinx.png);
-    background-repeat: center center;
-    background-size: cover;
+#programacao main{
+    width: 1700px;
+    margin-left: auto;
+    margin-right: auto;
 }
-/* ASSINADO JINX*/
 
 #programacao caption{
     caption-side: top;
     text-align: center;
     font-size: 2em;
     border: white solid 2px;
-    border-radius: 400px 400px 0 0;
+    border-radius: 0px 0px 0 0;
     color: white;
     background-color: rgba(150, 0, 0, 0.9);
 }
