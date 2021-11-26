@@ -3,33 +3,35 @@ body{
     font-family: Helvetica, Arial, sans-serif;
     color: white;
 }
+
 a{
     text-decoration: none;
 }
 
 /* Scrollbar */
+/* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #d70000 #2c2c2c;
+  }
 
-::-webkit-scrollbar,
-::-moz-scrollbar{
-    width: 15px;
-}
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
 
-::-webkit-scrollbar-track,
-::-moz-scrollbar-track{
-    background: gray; 
-}
- 
-::-webkit-scrollbar-thumb,
-::-moz-scrollbar-thumb{
-    background: red;
-}
+  *::-webkit-scrollbar-track {
+    background: #2c2c2c;
+  }
 
-::-webkit-scrollbar-thumb:hover, 
-::-moz-scrollbar-thumb:hover{
-    background: darkred; 
-}
+  *::-webkit-scrollbar-thumb {
+    background-color: #d70000;
+    border-radius: 10px;
+    border: 3px solid #d70000;
+  }
 
 /* Index*/
+
 #index{
     background-color: black;
     color: white;
