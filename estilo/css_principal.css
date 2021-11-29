@@ -47,7 +47,12 @@ a{
     border-radius: 20px;
 }
 
+#index .carousel-control-next:hover,#index .carousel-control-prev:hover{
+    background-color: rgba(0,0,0,0.7);
+}
+
 #index main p a:hover{
+    text-decoration: none;
     background-color: red;
 }
 
@@ -129,7 +134,7 @@ nav ul li a:hover{
     caption-side: top;
     text-align: center;
     font-size: 2em;
-    border: white solid 2px;
+    border: white solid 1px;
     border-radius: 0px 0px 0 0;
     color: white;
     background-color: rgba(150, 0, 0, 0.9);
@@ -144,6 +149,7 @@ nav ul li a:hover{
     border-collapse: collapse;
     width: 100%;
 }
+
 #programacao td, #programacao th{
     border: 1px solid white;
     padding: 20px;
