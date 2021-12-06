@@ -160,6 +160,7 @@ nav ul li a:hover{
 }
 
 #programacao table{
+    margin-bottom: 30px;
     background-color: rgba(0,0,0,0.7);
     border-collapse: collapse;
     width: 100%;
