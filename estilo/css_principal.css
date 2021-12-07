@@ -125,6 +125,7 @@ nav ul li a:hover{
 /* Programação */
 
 #programacao main{
+    max-width: 100%;
     width: 1700px;
     margin-left: auto;
     margin-right: auto;
@@ -133,7 +134,8 @@ nav ul li a:hover{
 #programacao h1{
     font-weight: bolder;
     background-color: rgba(150, 0, 0, 0.9);
-    width: 1500px;
+    max-width: 100%;
+    width: 1000px;
     margin: 0 auto 40px auto;
     padding: 5px 0;
     border: none;
@@ -151,7 +153,8 @@ nav ul li a:hover{
     background-color: rgba(150, 0, 0, 0.9);
 }
 
-#programacao td, #programacao th{
+#programacao td, 
+#programacao th{
     text-align: center;
 }
 
@@ -163,7 +166,7 @@ nav ul li a:hover{
     margin-bottom: 30px;
     background-color: rgba(0,0,0,0.7);
     border-collapse: collapse;
-    width: 100%;
+    width: inherit;
 }
 
 #programacao td, #programacao th{
@@ -196,7 +199,8 @@ nav ul li a:hover{
 #filmes h1{
     font-weight: bolder;
     background-color: rgba(150, 0, 0, 0.9);
-    width: 1500px;
+    max-width: 100%;
+    width: 1000px;
     margin: 0 auto 40px auto;
     padding: 5px 0;
     border: none;
@@ -244,7 +248,8 @@ nav ul li a:hover{
 #series h1{
     font-weight: bolder;
     background-color: rgba(150, 0, 0, 0.9);
-    width: 1500px;
+    max-width: 100%;
+    width: 1200px;
     margin: 0 auto 40px auto;
     padding: 5px 0;
     border: none;
@@ -275,7 +280,8 @@ nav ul li a:hover{
 #sobre h1{
     font-weight: bolder;
     background-color: rgba(150, 0, 0, 0.9);
-    width: 1500px;
+    max-width: 100%;
+    width: 500px;
     margin: 0 auto 40px auto;
     padding: 5px 0;
     border: none;
@@ -307,4 +313,17 @@ nav ul li a:hover{
 
 #sobre dd{
     text-align: center;
+}
+
+
+/* CELULAR */
+
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+@-ms-viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
 }
