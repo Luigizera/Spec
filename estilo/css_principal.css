@@ -194,6 +194,7 @@ nav ul li a:hover{
 }
 
 #filmes figure{
+    padding: 20px;
     text-align: center;
 }
 #filmes h1{
@@ -207,6 +208,14 @@ nav ul li a:hover{
     border-radius: 20px;
     text-align: center;
 }
+
+#filmes strong{
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(150, 0, 0, 0.9);
+}
+
 #filmes dt{
     background-color: rgba(150, 0, 0, 0.9);
     margin-left: 40px;
@@ -243,19 +252,28 @@ nav ul li a:hover{
 }
 
 #series figure{
+    padding: 20px;
     text-align: center;
 }
 #series h1{
     font-weight: bolder;
     background-color: rgba(150, 0, 0, 0.9);
     max-width: 100%;
-    width: 1200px;
+    width: 1000px;
     margin: 0 auto 40px auto;
     padding: 5px 0;
     border: none;
     border-radius: 20px;
     text-align: center;
 }
+
+#series strong{
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(150, 0, 0, 0.9);
+}
+
 #series dt{
     background-color: rgba(150, 0, 0, 0.9);
     margin-left: 40px;
@@ -273,6 +291,10 @@ nav ul li a:hover{
 }
 #series hr{
     border-bottom-width: medium;
+}
+
+#series figure figcaption{
+    font-size: 12px;
 }
 
 /* Sobre */
