@@ -69,17 +69,6 @@ a{
     background-color: rgba(0,0,0,0.7);
 }
 
-#index main #layout{
-    padding: 200px;
-    width: auto;
-    height: auto;
-    background-image: url(../midia/layout.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    text-align: center;
-    text-indent: -100000px;
-}
-
 /* Footer */
 
 
