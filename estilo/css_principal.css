@@ -47,11 +47,6 @@ a{
     letter-spacing: 2px;
 }
 
-#index main .description .horarios{
-    margin: 20px 0;
-    border: red thin solid;
-}
-
 #index main p a button{
     font-weight: 600;
     background: none;
