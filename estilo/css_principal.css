@@ -37,23 +37,41 @@ a{
     color: white;
 }
 #index main{
-    text-align: center;
+    width: 1000px;
+    margin: auto;
 }
 
-#index main p a{
+#index main .description{
+    margin: 20px 0;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#index main .description .horarios{
+    margin: 20px 0;
+    border: red thin solid;
+}
+
+#index main p a button{
+    font-weight: 600;
+    background: none;
     color: white;
-    padding: 10px;
+    padding: 10px 40px;
+    margin: 10px 0;
     border: red solid thin;
     border-radius: 20px;
+    transition: transform 1s;
+}
+
+#index main p a button:hover{
+    cursor: pointer;
+    text-decoration: none;
+    background-color: red;
+    transform: scale(1.2)
 }
 
 #index .carousel-control-next:hover,#index .carousel-control-prev:hover{
     background-color: rgba(0,0,0,0.7);
-}
-
-#index main p a:hover{
-    text-decoration: none;
-    background-color: red;
 }
 
 #index main #layout{
