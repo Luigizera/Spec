@@ -1,6 +1,6 @@
 body{
     background-color: black;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: roboto, Arial, sans-serif;
     color: white;
 }
 
@@ -41,13 +41,14 @@ a{
     margin: auto;
 }
 
-#index main .description{
+#index main .descIndex{
     margin: 20px 0;
     text-align: center;
     letter-spacing: 2px;
 }
 
-#index main p a button{
+#index main .descIndex #btnDiscord a button{
+    width: 200px;
     font-weight: 600;
     background: none;
     color: white;
@@ -55,10 +56,10 @@ a{
     margin: 10px 0;
     border: red solid thin;
     border-radius: 20px;
-    transition: transform 1s;
+    transition: transform 0.2s;
 }
 
-#index main p a button:hover{
+#index main .descIndex #btnDiscord a button:hover{
     cursor: pointer;
     text-decoration: none;
     background-color: red;
@@ -71,7 +72,33 @@ a{
 
 /* Footer */
 
+footer .footer-sticky{
+    position: fixed;
+    width: 500px;
+    height: 200px;
+    bottom: 0;
+    left: 50%;
+    margin-bottom: -175px;
+    margin-left: -250px;
+}
 
+footer .footer-sticky p{
+    text-align: center;
+}
+
+footer .footer-sticky p a{
+    border: red solid thin;
+    padding: 10px;
+    background-color: red;
+    color: white;
+}
+
+footer .footer-sticky p a:hover{
+    color: white;
+    border: darkred solid thin;
+    background-color: darkred;
+    text-decoration: none;
+}
 
 /* Navegação */
 
@@ -184,22 +211,24 @@ nav ul li a:hover{
 
 /* Filmes */
 
-#filmes dd a{
-    border: red solid thin;
-    padding: 10px;
-    color: white;
+#filmes .filmes-layout{
+    display: flex;
+    margin: 0 200px;
 }
 
-#filmes dd a:hover{
-    background-color: red;
-    text-decoration: none;
+
+@media (max-width: 1163px){
+    #filmes .filmes-layout{
+        display: block;
+        margin: 0 auto;
+    }
+    #filmes main .filmes-layout .filme-img{
+        margin: 0 auto;
+        width: 360px;
+    }
 }
 
-#filmes figure{
-    padding: 20px;
-    text-align: center;
-}
-#filmes h1{
+#filmes main h1{
     font-weight: bolder;
     background-color: rgba(150, 0, 0, 0.9);
     max-width: 100%;
@@ -211,14 +240,21 @@ nav ul li a:hover{
     text-align: center;
 }
 
-#filmes strong{
-    padding: 5px;
-    border: none;
-    border-radius: 20px;
-    background-color: rgba(150, 0, 0, 0.9);
+
+
+#filmes main .filmes-layout .filme-img figure img{
+    border: rgba(150, 0, 0, 0.9) solid thick;
+    
 }
 
-#filmes dt{
+#filmes main .filmes-layout .filme-img figure figcaption{
+    font-size: 12px;
+    text-align: center;
+    background-color: rgba(150, 0, 0, 0.9);
+    width: 360px;
+}
+
+#filmes main .filmes-layout .filme-descricao dt{
     background-color: rgba(150, 0, 0, 0.9);
     margin-left: 40px;
     margin-right: 40px;
@@ -226,38 +262,43 @@ nav ul li a:hover{
     font-weight: bold;
     font-size: 25px;
 }
-#filmes dd{
+
+#filmes main .filmes-layout .filme-descricao dd{
     border: 2px rgba(150, 0, 0, 0.9) solid;
     border-radius: 0px;
     margin: -2px 40px 30px 40px;
     padding: 30px;
     text-align: center;
 }
-#filmes hr{
-    border-bottom-width: medium;
+
+#filmes main .filmes-layout .filme-descricao dd strong{
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(150, 0, 0, 0.9);
 }
-#filmes figure figcaption{
-    font-size: 12px;
-}
+
 
 /* Series / Sequencias */
 
-#series dd a{
-    border: red solid thin;
-    padding: 10px;
-    color: white;
+#series .series-layout{
+    display: flex;
+    margin: 0 200px;
 }
 
-#series dd a:hover{
-    background-color: red;
-    text-decoration: none;
+
+@media (max-width: 1163px){
+    #series .series-layout{
+        display: block;
+        margin: 0 auto;
+    }
+    #series main .series-layout .serie-img{
+        margin: 0 auto;
+        width: 360px;
+    }
 }
 
-#series figure{
-    padding: 20px;
-    text-align: center;
-}
-#series h1{
+#series main h1{
     font-weight: bolder;
     background-color: rgba(150, 0, 0, 0.9);
     max-width: 100%;
@@ -269,14 +310,19 @@ nav ul li a:hover{
     text-align: center;
 }
 
-#series strong{
-    padding: 5px;
-    border: none;
-    border-radius: 20px;
-    background-color: rgba(150, 0, 0, 0.9);
+#series main .series-layout .serie-img figure img{
+    border: rgba(150, 0, 0, 0.9) solid thick;
+    
 }
 
-#series dt{
+#series main .series-layout .serie-img figure figcaption{
+    font-size: 12px;
+    text-align: center;
+    background-color: rgba(150, 0, 0, 0.9);
+    width: 360px;
+}
+
+#series main .series-layout .serie-descricao dt{
     background-color: rgba(150, 0, 0, 0.9);
     margin-left: 40px;
     margin-right: 40px;
@@ -284,19 +330,20 @@ nav ul li a:hover{
     font-weight: bold;
     font-size: 25px;
 }
-#series dd{
+
+#series main .series-layout .serie-descricao dd{
     border: 2px rgba(150, 0, 0, 0.9) solid;
     border-radius: 0px;
     margin: -2px 40px 30px 40px;
     padding: 30px;
     text-align: center;
 }
-#series hr{
-    border-bottom-width: medium;
-}
 
-#series figure figcaption{
-    font-size: 12px;
+#series main .series-layout .serie-descricao dd strong{
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(150, 0, 0, 0.9);
 }
 
 /* Sobre */
