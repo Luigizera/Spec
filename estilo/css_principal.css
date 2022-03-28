@@ -1,7 +1,15 @@
+:root{
+    --black: #000;
+    --gray: #111111;
+    --white: #FFF;
+    --red: #d70000;
+    --darkred: darkred;
+}
+
 body{
-    background-color: black;
+    background-color: var(--black);
     font-family: roboto, Arial, sans-serif;
-    color: white;
+    color: var(--white);
 }
 
 a{
@@ -12,7 +20,7 @@ a{
 /* Firefox */
   * {
     scrollbar-width: auto;
-    scrollbar-color: #d70000 #2c2c2c;
+    scrollbar-color: var(--red) var(--gray);
   }
 
   /* Chrome, Edge, and Safari */
@@ -21,40 +29,37 @@ a{
   }
 
   *::-webkit-scrollbar-track {
-    background: #2c2c2c;
+    background: var(--gray);
   }
 
   *::-webkit-scrollbar-thumb {
-    background-color: #d70000;
+    background-color: var(--red);
     border-radius: 10px;
-    border: 3px solid #d70000;
+    border: 3px solid var(--red);
   }
 
 /* Index*/
 
 #index{
-    background-color: black;
-    color: white;
-}
-#index main{
-    width: 1000px;
-    margin: auto;
+    background-color: var(--black);
+    color: var(--white);
 }
 
 #index main .descIndex{
     margin: 20px 0;
+    width: 100%;
+    max-width: 100%;
     text-align: center;
-    letter-spacing: 2px;
 }
 
 #index main .descIndex #btnDiscord a button{
     width: 200px;
     font-weight: 600;
     background: none;
-    color: white;
+    color: var(--white);
     padding: 10px 40px;
     margin: 10px 0;
-    border: red solid thin;
+    border: var(--red) solid thin;
     border-radius: 20px;
     transition: transform 0.2s;
 }
@@ -62,7 +67,7 @@ a{
 #index main .descIndex #btnDiscord a button:hover{
     cursor: pointer;
     text-decoration: none;
-    background-color: red;
+    background-color: var(--red);
     transform: scale(1.2)
 }
 
@@ -87,16 +92,16 @@ footer .footer-sticky p{
 }
 
 footer .footer-sticky p a{
-    border: red solid thin;
+    border: var(--red) solid thin;
     padding: 10px;
-    background-color: red;
-    color: white;
+    background-color: var(--red);
+    color: var(--white);
 }
 
 footer .footer-sticky p a:hover{
-    color: white;
-    border: darkred solid thin;
-    background-color: darkred;
+    color: var(--white);
+    border: var(--darkred) solid thin;
+    background-color: var(--darkred);
     text-decoration: none;
 }
 
@@ -104,7 +109,7 @@ footer .footer-sticky p a:hover{
 
 
 nav{
-    background-color: #111111;
+    background-color: var(--gray);
     overflow: auto;
     clear: both;
     margin-bottom: 20px;
@@ -122,7 +127,7 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: white;
+    color: var(--white);
     font-size: 1.2em;
     padding: 8px 50px;
     line-height: 2em;
@@ -130,11 +135,11 @@ nav ul li a{
 
 nav ul li a:hover{
     text-decoration: underline;
-    color: white;
+    color: var(--white);
 }
 
 .navbar-light .navbar-nav .nav-link{
-    color: white;
+    color: var(--white);
 }
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
@@ -142,7 +147,7 @@ nav ul li a:hover{
 }
 
 .navbar-light .navbar-nav .active>.nav-link,.navbar-light .navbar-nav .nav-link.active,.navbar-light .navbar-nav .nav-link.show,.navbar-light .navbar-nav .show>.nav-link{
-    color: red;
+    color: var(--red);
 }
 
 .navbar-light .navbar-toggler-icon{
@@ -162,7 +167,7 @@ nav ul li a:hover{
 
 #programacao h1{
     font-weight: bolder;
-    background-color: rgba(150, 0, 0, 0.9);
+    background-color: var(--darkred);
     max-width: 100%;
     width: 1000px;
     margin: 0 auto 40px auto;
@@ -176,10 +181,10 @@ nav ul li a:hover{
     caption-side: top;
     text-align: center;
     font-size: 2em;
-    border: white solid 1px;
+    border: var(--white) solid 1px;
     border-radius: 0px 0px 0 0;
-    color: white;
-    background-color: rgba(150, 0, 0, 0.9);
+    color: var(--white);
+    background-color: var(--darkred);
 }
 
 #programacao td, 
@@ -199,11 +204,11 @@ nav ul li a:hover{
 }
 
 #programacao td, #programacao th{
-    border: 1px solid white;
+    border: 1px solid var(--white);
     padding: 20px;
 }
 #programacao th{
-    background-color: rgba(150, 0, 0, 0.9);
+    background-color: var(--darkred);
 }
 #programacao tr:hover{
     background-color: rgba(100, 0, 0, 0.6);
@@ -213,7 +218,7 @@ nav ul li a:hover{
 
 #filmes .filmes-layout{
     display: flex;
-    margin: 0 200px;
+    margin: 50px 200px;
 }
 
 
@@ -230,7 +235,7 @@ nav ul li a:hover{
 
 #filmes main h1{
     font-weight: bolder;
-    background-color: rgba(150, 0, 0, 0.9);
+    background-color: var(--darkred);
     max-width: 100%;
     width: 1000px;
     margin: 0 auto 40px auto;
@@ -243,19 +248,19 @@ nav ul li a:hover{
 
 
 #filmes main .filmes-layout .filme-img figure img{
-    border: rgba(150, 0, 0, 0.9) solid thick;
+    border: var(--darkred) solid thick;
     
 }
 
 #filmes main .filmes-layout .filme-img figure figcaption{
     font-size: 12px;
     text-align: center;
-    background-color: rgba(150, 0, 0, 0.9);
+    background-color: var(--darkred);
     width: 360px;
 }
 
 #filmes main .filmes-layout .filme-descricao dt{
-    background-color: rgba(150, 0, 0, 0.9);
+    background-color: var(--darkred);
     margin-left: 40px;
     margin-right: 40px;
     text-align: center;
@@ -264,7 +269,7 @@ nav ul li a:hover{
 }
 
 #filmes main .filmes-layout .filme-descricao dd{
-    border: 2px rgba(150, 0, 0, 0.9) solid;
+    border: 2px var(--darkred) solid;
     border-radius: 0px;
     margin: -2px 40px 30px 40px;
     padding: 30px;
@@ -275,7 +280,7 @@ nav ul li a:hover{
     padding: 5px;
     border: none;
     border-radius: 20px;
-    background-color: rgba(150, 0, 0, 0.9);
+    background-color: var(--darkred);
 }
 
 
@@ -283,7 +288,7 @@ nav ul li a:hover{
 
 #series .series-layout{
     display: flex;
-    margin: 0 200px;
+    margin: 50px 200px;
 }
 
 
@@ -300,7 +305,7 @@ nav ul li a:hover{
 
 #series main h1{
     font-weight: bolder;
-    background-color: rgba(150, 0, 0, 0.9);
+    background-color: var(--darkred);
     max-width: 100%;
     width: 1000px;
     margin: 0 auto 40px auto;
@@ -311,19 +316,19 @@ nav ul li a:hover{
 }
 
 #series main .series-layout .serie-img figure img{
-    border: rgba(150, 0, 0, 0.9) solid thick;
+    border: var(--darkred) solid thick;
     
 }
 
 #series main .series-layout .serie-img figure figcaption{
     font-size: 12px;
     text-align: center;
-    background-color: rgba(150, 0, 0, 0.9);
+    background-color: var(--darkred);
     width: 360px;
 }
 
 #series main .series-layout .serie-descricao dt{
-    background-color: rgba(150, 0, 0, 0.9);
+    background-color: var(--darkred);
     margin-left: 40px;
     margin-right: 40px;
     text-align: center;
@@ -332,7 +337,7 @@ nav ul li a:hover{
 }
 
 #series main .series-layout .serie-descricao dd{
-    border: 2px rgba(150, 0, 0, 0.9) solid;
+    border: 2px var(--darkred) solid;
     border-radius: 0px;
     margin: -2px 40px 30px 40px;
     padding: 30px;
@@ -343,14 +348,14 @@ nav ul li a:hover{
     padding: 5px;
     border: none;
     border-radius: 20px;
-    background-color: rgba(150, 0, 0, 0.9);
+    background-color: var(--darkred);
 }
 
 /* Sobre */
 
 #sobre h1{
     font-weight: bolder;
-    background-color: rgba(150, 0, 0, 0.9);
+    background-color: var(--darkred);
     max-width: 100%;
     width: 500px;
     margin: 0 auto 40px auto;
@@ -361,13 +366,13 @@ nav ul li a:hover{
 }
 
 #sobre dt{
-    background-color: rgba(150, 0, 0, 0.9);
+    background-color: var(--darkred);
     text-align: center;
     font-weight: bold;
     font-size: 25px;
 }
 #sobre dd{
-    border: 2px rgba(150, 0, 0, 0.9) solid;
+    border: 2px var(--darkred) solid;
     border-radius: 0px;
     margin-top: -2px;
     margin-bottom: 30px;
@@ -375,11 +380,11 @@ nav ul li a:hover{
 }
 #sobre dd a{
     font-weight: bold;
-    color: red;
+    color: var(--red);
 }
 
 #sobre dd a:hover{
-    color: darkred;
+    color: var(--darkred);
 }
 
 #sobre dd{
